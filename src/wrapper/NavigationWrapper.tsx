@@ -7,6 +7,9 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import StartScreen from '../pages/StartScreen/StartScreen';
 import FeaturesScreen from '../pages/FeaturesScreen/FeaturesScreen';
 import { Platform } from 'react-native';
+import LoginScreen from '../pages/LoginScreen/LoginScreen';
+import Onboarding from '../pages/Onboarding/Onboarding';
+import HomeScreen from '../pages/HomeScreen/HomeScreen';
 
 
 function NavigationWrapper() {
@@ -21,6 +24,9 @@ function NavigationWrapper() {
             <Stack.Group>
                 <Stack.Screen  component={StartScreen} name="StartScreen"/>
                 <Stack.Screen  component={FeaturesScreen} name="FeaturesScreen"/>
+                <Stack.Screen  component={LoginScreen} name="LoginScreen"/>
+                <Stack.Screen  component={Onboarding} name="OnboardingScreen"/>
+                <Stack.Screen  component={HomeScreen} name="HomeScreen"/>
             </Stack.Group>
         </Stack.Navigator>
 

@@ -8,7 +8,7 @@ function FeaturesScreen(props) {
     const {navigation}=props;
 
     const handleGetStarted=()=>{
-        navigation.navigate("StartScreen");
+        navigation.navigate("LoginScreen");
     }
 
   return (
